@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Website Walkthrough](https://github.com/Nespina24/web102_project5/blob/main/RecipeWalkthrough2.gif)
 
 
 GIF created with ...  
