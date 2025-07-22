@@ -84,3 +84,22 @@
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+}
+
+.chart {
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 800px;
+  background: #f9f9f9;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem auto;
+}

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
-import viteLogo from '/vite.svg'
+import { Link } from 'react-router-dom'
 import './App.css'
+import CaloriesChart from './CaloriesChart'
+import IngredientsChart from './IngredientsChart'
 
 const API_KEY = '5ea1e32ffde34599ba1e83bb10610b24';
 
@@ -14,10 +16,6 @@ function App() {
   const [numResults, setNumResults] = useState(0);
   const [searchTerm, setSearchTerm] = useState('');
 
-
-  const refreshPage = () => {
-    window.location.reload();
-  };
   const toggleCuisine = (name) => {
     setCuisines(prev =>
       prev.includes(name)
@@ -89,11 +87,6 @@ function App() {
   return (
     <>
       <div className="body-container">
-        <header className="dashboard">
-          <button className="dashboard-element" onClick={refreshPage}>🏠 Dashboard</button>
-          <button className="dashboard-element" onClick={refreshPage}>🔍 Search</button>
-          <button className="dashboard-element" onClick={refreshPage}>ℹ️ About</button>
-        </header>
         <div className="card-list">
           <div className="card">
             <h3>Showing {numResults} recipes</h3>
@@ -128,6 +121,14 @@ function App() {
             </div>
           ))}
         </div>
+        <div className="chart-container">
+          <div className="chart">
+            <CaloriesChart recipes={recipes} />
+          </div>
+          <div className="chart">
+            <IngredientsChart recipes={recipes} />
+          </div>
+        </div>
         <div className="recipe-list">
           <ul className="recipe-results">
             {recipes.map(recipe => (
@@ -159,6 +160,13 @@ function App() {
                       </li>
                     ))}
                   </ul>
+                </div>
+
+                <div className="recipe-section">
+                  <h3>Additional Details</h3>
+                  <Link to={`/recipe/${recipe.id}`} state={{ recipe }}>
+                    {recipe.title}
+                  </Link>
                 </div>
               </li>
             ))}
