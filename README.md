@@ -22,7 +22,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] The site’s customized dashboard contains more content that explains what is interesting about the data 
+- [x] The site’s customized dashboard contains more content that explains what is interesting about the data 
   - e.g., an additional description, graph annotation, suggestion for which filters to use, or an additional page that explains more about the data
 - [ ] The site allows users to toggle between different data visualizations
   - User should be able to use some mechanism to toggle between displaying and hiding visualizations 
@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Website Walkthrough](https://github.com/Nespina24/web102_project5/blob/main/RecipeWalkthrough3.gif)
+![Website Walkthrough](https://github.com/Nespina24/web102_project5/blob/main/RecipeWalkthrough4.gif)
 
 
 GIF created with ...  
